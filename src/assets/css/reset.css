@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,ul{
+  list-style: none;
+}
+input {
+  border: 1px solid lightgray;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline:medium;
+  color: black;
+  font-size: 1.5em;
+}
+button{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}

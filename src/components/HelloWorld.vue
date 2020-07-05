@@ -4,10 +4,15 @@
             <div class="logo">
                 {{logo}}
             </div>
-            <TabBar />
-            <div class="search">
-                <form>
-                    <input type="text"/>
+            <div class="searchBar">
+                <TabBar/>
+                <form class="search" :action="formAction[0].url">
+                    <div class="searchLogo">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-baidu"></use>
+                        </svg>
+                    </div>
+                    <input type="text" :name="formAction[0].inputName"/>
                     <button type="submit">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#icon-search1"></use>
@@ -26,7 +31,12 @@
     components: {TabBar},
     data() {
       return {
-        logo: 'logo'
+        logo: 'logo',
+        formAction: [
+          {url: 'https://baidu.com/s', inputName: 'wd'},
+          {url: 'https://google.com/search', inputName: 'q'}
+        ],
+
       }
     }
   }

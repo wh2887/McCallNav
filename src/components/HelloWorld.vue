@@ -1,9 +1,8 @@
 <template>
     <main class="globalMain">
-        <div></div>
+        <ForkMe/>
         <div class="center">
-            <div class="logo">
-                {{logo}}
+            <div class="logo" :style="{'background-image':`'url(${logo})'`}">
             </div>
             <div class="searchBar">
                 <TabBar :searchEngine="searchEngine" v-on:liIndex="index = $event"/>
@@ -27,12 +26,14 @@
 
 <script>
   import TabBar from './TabBar'
+  import ForkMe from './forkMeOnGitHub.vue'
+  import backgroundUrl from '../assets/images/navLogo.jpg'
 
   export default {
-    components: {TabBar},
+    components: {TabBar, ForkMe},
     data() {
       return {
-        logo: 'logo',
+        logo: backgroundUrl,
         index: undefined,
         searchEngine: [
           {searchName: '百度', logo: '#icon-baidu', url: 'https://baidu.com/s', inputName: 'wd'},

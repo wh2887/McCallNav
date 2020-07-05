@@ -21,7 +21,6 @@ body {
 }
 
 .globalMain .center {
-  border: 1px solid red;
   width: 50vw;
   height: 70vh;
   display: flex;
@@ -52,13 +51,14 @@ body {
   align-items: center;
 }
 
-.globalMain .searchBar{
+.globalMain .searchBar {
   width: 562px;
   margin-top: 222px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .globalMain .search {
   width: 100%;
   height: 44px;
@@ -69,7 +69,7 @@ body {
 }
 
 @media (max-width: 672px) {
-  .globalMain .searchBar{
+  .globalMain .searchBar {
     width: 449px;
   }
 }
@@ -84,7 +84,7 @@ body {
   width: 100%;
   height: 44px;
   border-radius: 44px;
-  padding:20px 40px;
+  padding: 20px 40px;
 }
 
 .globalMain .search button {

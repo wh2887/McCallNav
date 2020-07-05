@@ -1,18 +1,23 @@
 <template>
     <div>
-        <ul class="tabUl">
-            <li>百 度</li>
-            <li>谷 歌</li>
-            <li>京 东</li>
-            <li>知 乎</li>
-            <li>B 站</li>
-            <li>B 站</li>
-        </ul>
+        <ol class="tabUl">
+            <li v-for="(searchEngine,index) in searchEngine" :key="index" @click="$emit('liIndex',index)">
+                {{searchEngine.searchName}}
+            </li>
+        </ol>
     </div>
 </template>
 
 <script>
-  export default {}
+  export default {
+    props: ['searchEngine'],
+    data() {
+      return {}
+    },
+    methods: {
+
+    }
+  }
 </script>
 
 <style>

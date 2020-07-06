@@ -40,8 +40,14 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .globalMain .center {
+    width: 360px;
+  }
+}
+
 .globalMain .logo {
-  width: 15vw;
+  width: 272px;
   height: 80px;
   position: absolute;
   top: 122px;
@@ -50,6 +56,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
 
 .globalMain .searchBar {
   width: 562px;

@@ -45,10 +45,10 @@ body {
   height: 80px;
   position: absolute;
   top: 122px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .globalMain .searchBar {

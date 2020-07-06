@@ -1,5 +1,7 @@
 <template>
-    <main class="globalMain">
+    <main class="globalMain"
+          :style="{ backgroundImage: 'url(' + require('@/assets/images/bg'+backgroundId+'.jpg') + ')'  }"
+    >
         <ForkMe/>
         <div class="center">
             <div class="logo">
@@ -33,6 +35,7 @@
     components: {TabBar, ForkMe},
     data() {
       return {
+        backgroundId: 1,
         index: undefined,
         searchEngine: [
           {searchName: '百度', logo: '#icon-baidu', url: 'https://baidu.com/s', inputName: 'wd'},

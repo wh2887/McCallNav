@@ -11,12 +11,21 @@
   border-radius: 18px 18px 0 0;
   background: #DEE1E6;
 }
+
 @media (max-width: 672px) {
-  .tabUl li{
+  .tabUl li {
     width: 60px;
     font-size: 0.8em;
   }
 }
-.tabUl li:hover{
-  background:#F2F3F5 ;
+
+@media (max-width: 375px) {
+  .tabUl li {
+    width: 50px;
+    font-size: 0.6em;
+  }
+}
+
+.tabUl li:hover {
+  background: #F2F3F5;
 }
